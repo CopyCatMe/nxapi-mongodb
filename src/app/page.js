@@ -4,11 +4,11 @@ export default function Home() {
   return (
     <div>
       <Link href="/api/products">
-        Productos
+        <button>Productos</button>
       </Link>
       <br />
       <Link href="/api/users">
-        Usuarios
+        <button>Usuarios</button>
       </Link>
     </div>
   )

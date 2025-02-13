@@ -23,4 +23,20 @@ a {
   text-decoration: none;
 }
 
+button {
+  display: block;
+  margin: 50px auto;
+  background-color: black;
+  border: none;
+  padding: 30px 50px;
+  border-radius: 5px;
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+button:hover {
+  transform: scale(1.05);
+}
 
