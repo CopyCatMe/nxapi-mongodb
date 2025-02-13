@@ -63,7 +63,6 @@ content-type: application/json
 DELETE https://nxapi-mongodb.vercel.app/api/users/6542da35c20d9ad95c739702
 content-type: application/json
 
-
 # Ejemplos productos
 
 ###
@@ -72,8 +71,10 @@ POST http://localhost:3000/api/products HTTP/1.1
 content-type: application/json
 
 { 
-    "nombre": "Ladrillos", 
-    "precio": 20 
+    "nombre": "Anchoa", 
+    "precio": 1,
+    "fecha": "2023-01-19T23:00:00.000+00:00",
+    "url": "https://picsum.photos/200"
 }
 
 ### 
@@ -83,7 +84,9 @@ content-type: application/json
 
 { 
     "nombre": "Periquito", 
-    "precio": 10 
+    "precio": 10,
+    "fecha": "2023-01-01T23:00:00.000+00:00",
+    "url": "https://picsum.photos/200"
 }
 
 ### 
@@ -103,10 +106,64 @@ content-type: application/json
 
 { 
     "nombre": "Pan Bimbo", 
-    "precio": 2
+    "precio": 2,
+    "fecha": "2023-01-01T23:00:00.000+00:00",
+    "url": "https://picsum.photos/200"
 }
 
 ### 
 
 DELETE http://localhost:3000/api/products/67ae59a0309c8ee695944fc8
 content-type: application/json 
+
+###
+
+POST https://nxapi-mongodb-navy.vercel.app/api/products HTTP/1.1
+content-type: application/json
+
+{ 
+    "nombre": "Bollo", 
+    "precio": 1,
+    "fecha": "2023-01-19T23:00:00.000+00:00",
+    "url": "https://picsum.photos/200"
+}
+
+### 
+
+POST https://nxapi-mongodb-navy.vercel.app/api/products HTTP/1.1
+content-type: application/json
+
+{ 
+    "nombre": "Periquito", 
+    "precio": 10,
+    "fecha": "2023-01-01T23:00:00.000+00:00",
+    "url": "https://picsum.photos/200"
+}
+
+### 
+
+GET https://nxapi-mongodb-navy.vercel.app/api/products HTTP/1.1
+content-type: application/json
+
+###
+
+GET https://nxapi-mongodb-navy.vercel.app/api/products/67ae59a0309c8ee695944fc7 HTTP/1.1
+content-type: application/json
+
+###
+
+PUT https://nxapi-mongodb-navy.vercel.app/api/products/67ae59a0309c8ee695944fc7 HTTP/1.1
+content-type: application/json
+
+{ 
+    "nombre": "Pan Bimbo", 
+    "precio": 2,
+    "fecha": "2023-01-01T23:00:00.000+00:00",
+    "url": "https://picsum.photos/200"
+}
+
+### 
+
+DELETE https://nxapi-mongodb-navy.vercel.app/api/products/67ae59a0309c8ee695944fc8
+content-type: application/json
+
