@@ -25,7 +25,7 @@ content-type: application/json
 
 ###
 
-GET http://localhost:3000/api/users/6544f16661269657e5324e80 HTTP/1.1
+GET http://localhost:3000/api/users/67acd94c7335e0306a4da259 HTTP/1.1
 content-type: application/json
 
 ###
@@ -62,3 +62,51 @@ content-type: application/json
 
 DELETE https://nxapi-mongodb.vercel.app/api/users/6542da35c20d9ad95c739702
 content-type: application/json
+
+
+# Ejemplos productos
+
+###
+
+POST http://localhost:3000/api/products HTTP/1.1
+content-type: application/json
+
+{ 
+    "nombre": "Ladrillos", 
+    "precio": 20 
+}
+
+### 
+
+POST http://localhost:3000/api/products HTTP/1.1
+content-type: application/json
+
+{ 
+    "nombre": "Periquito", 
+    "precio": 10 
+}
+
+### 
+
+GET http://localhost:3000/api/products HTTP/1.1
+content-type: application/json
+
+###
+
+GET http://localhost:3000/api/products/67ae59a0309c8ee695944fc7 HTTP/1.1
+content-type: application/json
+
+###
+
+PUT http://localhost:3000/api/products/67ae59a0309c8ee695944fc7 HTTP/1.1
+content-type: application/json
+
+{ 
+    "nombre": "Pan Bimbo", 
+    "precio": 2
+}
+
+### 
+
+DELETE http://localhost:3000/api/products/67ae59a0309c8ee695944fc8
+content-type: application/json 
