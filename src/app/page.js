@@ -1,5 +1,16 @@
-import { redirect } from "next/navigation"
+import Link from "next/link"
 
 export default function Home() {
-  redirect('/api/products')
+  return (
+    <div>
+      <Link href="/api/products">
+        Productos
+      </Link>
+      <br />
+      <Link href="/api/users">
+        Usuarios
+      </Link>
+    </div>
+  )
 }
+
